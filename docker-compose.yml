@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  jslib:
+    image: nginx
+    container_name: jslib
+    volumes:
+      - ./:/usr/share/nginx/html
+    ports:
+      - "8081:80"
